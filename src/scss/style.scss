@@ -13,7 +13,6 @@
     
     .wrapper {
         width: 100%;
-        max-width: 100rem;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -25,7 +24,6 @@
         top: 0;
         z-index: 3;
         width: 100%;
-        max-width: 100rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -207,10 +205,10 @@
             background: url('../images/logo.gif');
             background-size: cover;
             background-position: center;
-            position: relative;
             @include flexStandard;
             .container {
                 @include containerStyle;
+                position: relative;
                 .slogan {
                     @include flexStandard;
                     flex-direction: column;
@@ -239,8 +237,8 @@
                     }
                     &__photo {
                         position: absolute;
-                        top: 3rem;
-                        right: 0;
+                        top: -3rem;
+                        right: -5rem;
                         width: 45rem;
                         height: 45rem;
                         display: none;
@@ -257,7 +255,6 @@
             &:after {
                 content: '';
                 width: 100%;
-                max-width: 100rem;
                 height: 42rem;
                 position: absolute;
                 top: 0;
